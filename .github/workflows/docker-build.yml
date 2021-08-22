@@ -42,4 +42,6 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: supirman/python-helloworld:latest supirman/python-helloworld:${{ secrets.DOCKERHUB_TOKEN }}
+          tags: | 
+            supirman/python-helloworld:latest 
+            supirman/python-helloworld:${{ secrets.DOCKERHUB_TOKEN }}
